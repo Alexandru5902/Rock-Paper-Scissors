@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href='index.css'>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | Rock, Paper, Scissors</title>
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+  <!-- Score game flex -->
+      <!-- Flexing wrap with the score on it -->
+    <div class="flex-wrap">
+      <div class="flex">
+        <div class="flex-text">
+           <img src="images/logo.svg" />
+        </div>
+        <div class="flex-score">
+          <div class="flex-box">
+            <h2>SCORE</h2>
+            <h5 class="score"></h5>
+          </div>
+        </div>
+      </div>
+      <!-- The wrap when the player chooses -->
+      <div class="flex-play">
+        <div class="flex-player">
+          <div class="player-text">
+            <h3>You Picked</h3>
+          </div>
+          <div class="player-img">
+             <img src="images/icon-paper.svg" id="player-img" />
+          </div>
+        </div>
+        <div class="flex-buton">
+          <h3 class="play-text">YOU LOSE</h3>
+          <button type="button" class="play-again">PLAY AGAIN</button>
+        </div>
+        <div class="flex-house">
+          <div class="house-text">
+            <h3>The House Picked</h3>
+          </div>
+          <div class="house-img">
+             <img src="images/icon-rock.svg" id="rock-img" />
+          </div>
+        </div>
+      </div>
+      <!-- The wrap when the player is chosing-->
+      <div class="flex-chose">
+        <div class="triangle-img">
+          <div class="triangle-paper">
+            <img src="images/icon-paper.svg" data-id="paper" id="paper"/>
+          </div>
+          <div class="triangle-scissors">
+            <img src="images/icon-scissors.svg" data-id="scissors" id="scissors" />
+          </div>
+          <div class="triangle-rock">
+            <img src="images/icon-rock.svg" data-id="rock" id="rock" />
+          </div>
+          <img src="images/bg-triangle.svg">
+        </div>
+     </div>
+    </div>
+    <!-- Flex chose -->
+    <div class="modal">
+       <div class="modal-text">
+         <div class="modal-texting">
+           <h3>RULES</h3>
+           <a href='#' class="modal-remove"> 
+            <img src="images/icon-close.svg" />
+           </a>
+         </div>
+         <div class="modal-img">
+           <img src="images/image-rules.svg" />
+         </div>
+       </div>
+    </div>
+<button type="button" class="btn-rules">Rules</button>
+<button type="button" class="btn-restart">Restart Game</button>
+<script src="index.js"></script>
+</body>
+</html>
