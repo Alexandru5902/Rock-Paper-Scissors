@@ -1,3 +1,6 @@
+https://alexandru5902.github.io/Rock-Paper-Scissors/index.html - CLICK HERE TO ACCES IT !
+
+
 # Frontend Mentor - Rock, Paper, Scissors
 
 ![Design preview for the Rock, Paper, Scissors coding challenge](./design/desktop-preview.jpg)
